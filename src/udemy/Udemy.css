@@ -1,0 +1,367 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #c2d2e4;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  height: 30px;
+  background-color: #0a4c95;
+  border-radius: 5px;
+} */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #c2d2e4;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #0a4c95;
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.header_container {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0 2px 5px #666666;
+}
+
+.logo_udemy {
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.header_text {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.header_text:hover {
+  color: blue;
+}
+
+.search_engine {
+  display: flex;
+  flex-direction: row;
+  padding: 11px;
+  width: 450px;
+  height: 2 rem;
+  border-radius: 9999px;
+  border: 1px solid black;
+  background-color: #f7f9fa;
+}
+
+.course_card {
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+  cursor: pointer;
+  width: 240px;
+}
+
+.search_svg {
+  width: 28px;
+  height: 16px;
+  align-self: center;
+}
+
+.search_text {
+  font-size: 14px;
+  margin-left: 25px;
+  color: #1c1d1f;
+}
+
+.login_button {
+  padding: 10px 14px;
+  border: 1px solid black;
+  margin-left: -10px;
+  cursor: pointer;
+}
+
+.signup_button {
+  padding: 10px 14px;
+  border: 1px solid black;
+  margin-left: -10px;
+  background-color: black;
+  cursor: pointer;
+}
+
+.network_button {
+  padding: 10px;
+  margin-left: -10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.details_swiper_container {
+  position: relative;
+  cursor: pointer;
+}
+
+.card_img {
+  position: absolute;
+  top: 56px;
+  left: 56px;
+  padding: 40px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px grey;
+  gap: 18px;
+}
+
+.courses_container {
+  margin: 50px 22px;
+}
+
+.bolder_course_topic {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.course_list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 76px;
+}
+
+.course_item {
+  color: #6a6f73;
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.course_item_active {
+  color: black;
+}
+
+.courses_sub_container {
+  margin-top: 20px;
+  padding: 32px 20px;
+  border: 1px solid grey;
+}
+
+.explore_button {
+  padding: 10px;
+  border: 1px solid black;
+  width: 108px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.explore_button :hover {
+  background-color: grey;
+}
+
+.courses_swiper {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.best_seller {
+  background-color: yellow;
+  padding: 3px 8px;
+  font-size: 14px;
+  font-weight: 700;
+  width: 62px;
+}
+
+.students_container {
+  margin: 80px 0px;
+}
+
+.students_course_container {
+  margin-top: 18px;
+  border: 1px solid black;
+  height: 14rem;
+}
+
+.featured_container {
+  height: 30rem;
+  background-color: #f7f9fa;
+}
+
+.featured_content {
+  padding: 64px 24px;
+}
+
+.feature_details {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 110px;
+}
+
+.data_topic {
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.explore_topics_button {
+  padding: 10px 14px;
+  border: 1px solid black;
+  margin-top: 20px;
+  width: 140px;
+  cursor: pointer;
+}
+
+.trusted_container {
+  height: 14rem;
+}
+
+.trusted_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 3.2rem;
+  align-items: center;
+}
+
+.logo_container {
+  display: flex;
+  flex-direction: row;
+  gap: 86px;
+}
+
+.thanks_container {
+  height: 28rem;
+  background-color: #f7f9fa;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.thanks_card {
+  margin: 70px auto;
+  padding: 60px;
+  background-color: white;
+  width: 650px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.description_thanks {
+  width: 350px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.profile_description {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 350px;
+  align-items: center;
+}
+
+.profile_img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.customer_story {
+  /* position: absolute; */
+}
+
+.udemy_porfolio {
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 0px;
+}
+
+.udmey_business {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+
+.udemy_instructor {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  margin-top: 30px;
+}
+
+.business_description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+  justify-content: center;
+}
+
+.business_buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1d1f;
+  color: white;
+  padding: 30px 60px;
+  gap: 50px;
+}
+
+.lists {
+  display: flex;
+  flex-direction: row;
+  gap: 160px;
+}
+
+.business_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.down_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* .lists:last-child{
+  margin-right: auto;
+} */
