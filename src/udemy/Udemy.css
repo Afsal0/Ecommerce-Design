@@ -1,7 +1,9 @@
 * {
   padding: 0;
   margin: 0;
+  /* border: 1px solid; */
 }
+
 
 /* ::-webkit-scrollbar {
   width: 5px;
@@ -47,7 +49,7 @@
 }
 
 .logo_udemy {
-  width: 80px;
+  /* width: 80px; */
   height: 40px;
   cursor: pointer;
 }
@@ -65,7 +67,7 @@
   display: flex;
   flex-direction: row;
   padding: 11px;
-  width: 450px;
+  /* width: 450px; */
   height: 2 rem;
   border-radius: 9999px;
   border: 1px solid black;
@@ -78,11 +80,11 @@
 
   gap: 6px;
   cursor: pointer;
-  width: 240px;
+  /* width: 240px; */
 }
 
 .search_svg {
-  width: 28px;
+  /* width: 28px; */
   height: 16px;
   align-self: center;
 }
@@ -168,7 +170,7 @@
 .explore_button {
   padding: 10px;
   border: 1px solid black;
-  width: 108px;
+  /* width: 108px; */
   margin-top: 12px;
   cursor: pointer;
 }
@@ -190,7 +192,7 @@
   padding: 3px 8px;
   font-size: 14px;
   font-weight: 700;
-  width: 62px;
+  /* width: 62px; */
 }
 
 .students_container {
@@ -216,7 +218,8 @@
   margin-top: 20px;
   display: flex;
   flex-direction: row;
-  gap: 110px;
+  /* gap: 110px; */
+  gap: 80px;
 }
 
 .data_topic {
@@ -234,7 +237,7 @@
   padding: 10px 14px;
   border: 1px solid black;
   margin-top: 20px;
-  width: 140px;
+  /* width: 140px; */
   cursor: pointer;
 }
 
@@ -268,7 +271,7 @@
   margin: 70px auto;
   padding: 60px;
   background-color: white;
-  width: 650px;
+  /* width: 650px; */
   height: 300px;
   display: flex;
   flex-direction: row;
@@ -276,7 +279,7 @@
 }
 
 .description_thanks {
-  width: 350px;
+  /* width: 350px; */
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
@@ -286,12 +289,12 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 350px;
+  /* width: 350px; */
   align-items: center;
 }
 
 .profile_img {
-  width: 100px;
+  /* width: 100px; */
   height: 100px;
   border-radius: 50%;
 }
@@ -325,7 +328,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 400px;
+  /* width: 400px; */
   justify-content: center;
 }
 
@@ -365,3 +368,49 @@
 /* .lists:last-child{
   margin-right: auto;
 } */
+
+
+/* Ipad */
+@media (max-width:820px) {
+  .lists {
+    gap: 50px;
+  }
+
+  .logo_container {
+    gap: 12px;
+}
+
+}
+
+@media (min-width:720px) and (max-width:920px) {
+  .featured_content {
+    background-color: #555;
+  }
+}
+
+/* Mobile */
+@media (max-width:480px) {
+  .lists {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .course_list {
+    flex-wrap: wrap;
+}
+
+.header_container {
+  flex-wrap: wrap;
+}
+
+.card_img {
+  display: none;
+}
+
+.bolder_course_topic {
+  display: none;
+}
+
+}
+
