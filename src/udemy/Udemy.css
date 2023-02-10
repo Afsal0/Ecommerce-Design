@@ -365,3 +365,35 @@
 /* .lists:last-child{
   margin-right: auto;
 } */
+
+@media (max-width: 820px) {
+  .lists {
+    gap: 60px;
+  }
+  .featured_content {
+    padding: 24px;
+  }
+  .feature_details {
+    gap: 11px;
+  }
+  .logo_container {
+    gap: 10px;
+  }
+  .udmey_business {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .udemy_instructor {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .udemy_porfolio {
+    height: auto;
+  }
+  .card_img {
+    top: 22px;
+    left: 16px;
+    padding: 25px;
+  }
+} ;

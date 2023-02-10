@@ -53,6 +53,7 @@ export default function Udemy() {
           </div>
         </fieldset>
       </div> */}
+
       <div className="details_swiper_container">
         <img src={LongSVG} width="100%" />
         <div className="card_img">
