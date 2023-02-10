@@ -489,10 +489,20 @@ export default function Udemy() {
             </div>
           </div>
 
-          <img src={BusinessSVG} width="400px" height={"400px"} />
+          <img
+            src={BusinessSVG}
+            className="business_logo"
+            width="400px"
+            height={"400px"}
+          />
         </div>
         <div className="udemy_instructor">
-          <img src={InstructorSVG} width="400px" height={"400px"} />
+          <img
+            src={InstructorSVG}
+            className="instructor_img"
+            width="400px"
+            height={"400px"}
+          />
           <div className="business_description">
             <p style={{ fontSize: "36px", fontWeight: "600" }}>
               Become an instructor

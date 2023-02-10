@@ -396,4 +396,52 @@
     left: 16px;
     padding: 25px;
   }
-} ;
+}
+
+@media (max-width: 480px) {
+  .header_container {
+    flex-wrap: wrap;
+  }
+  .card_img {
+    display: none;
+  }
+  .featured_container {
+    height: auto;
+  }
+  .feature_details {
+    flex-wrap: wrap;
+  }
+  .course_list {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .trusted_container {
+    height: auto;
+  }
+  .logo_container {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .thanks_container {
+    height: auto;
+  }
+  .thanks_card {
+    flex-wrap: wrap;
+    width: 49%;
+    height: auto;
+    gap: 30px;
+  }
+  .business_description {
+    width: 70%;
+  }
+  .business_logo {
+    width: 90%;
+  }
+  .instructor_img {
+    width: 90%;
+  }
+  .lists {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
