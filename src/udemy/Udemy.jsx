@@ -24,7 +24,7 @@ export default function Udemy() {
           <img src={SearchSvg} className="search_svg" />
           <p className="search_text">Search for anything</p>
         </div>
-        <p className="header_text">Udemy Business</p>
+        <p className="header_text">Udemy Business on</p>
         <p className="header_text">Teach on Udemy</p>
         <img src={CartSVG} width="32px" height={"32px"} />
         <div className="login_button">
