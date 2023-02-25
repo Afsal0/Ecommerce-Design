@@ -177,12 +177,19 @@
   background-color: grey;
 }
 
+.carousal {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
 .courses_swiper {
   margin-top: 28px;
   display: flex;
   flex-direction: row;
   gap: 10px;
-  flex-wrap: wrap;
+  transition: 1s
 }
 
 .best_seller {

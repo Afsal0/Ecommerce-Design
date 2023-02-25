@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Udemy.css";
 import UdemyLogo from "../theme/img/udemylogo.png";
 import SearchSvg from "../theme/img/search.png";
@@ -13,7 +13,38 @@ import TrainerSVG from "../theme/img/trainerimg.jpg";
 import BusinessSVG from "../theme/img/business.jpg";
 import InstructorSVG from "../theme/img/instructorimg.jpg";
 
+
+
+
 export default function Udemy() {
+  let width, carousel, swiper, nxt, prev
+  useEffect(() => {
+    nxt = document.querySelector(".nxt");
+    prev = document.querySelector(".prev");
+    carousel = document.querySelector(".carousal");
+    swiper = document.querySelector(".courses_swiper");
+    width = carousel.offsetWidth;
+  }, []);
+
+  var index = 0;
+  const next = () => {
+    index = index + 1;
+    swiper.style.transform = "translateX(" + index * -width + "px)";
+    if (swiper.offsetWidth - index * width < index * width) {
+      nxt.classList.add("hide");
+    }
+  }
+
+  const previous = () => {
+    index = index - 1;
+    swiper.style.transform = "translateX(" + index * -width + "px)";
+
+    nxt.classList.remove("hide");
+    if (index === 0) {
+      prev.classList.remove("show");
+    }
+  }
+
   return (
     <div>
       {/* header */}
@@ -92,46 +123,128 @@ export default function Udemy() {
           <div className="explore_button">
             <p style={{ fontWeight: "bold" }}>Explore python</p>
           </div>
-          <div className="courses_swiper">
-            <div className="course_card">
-              <img src={CourseSVG} width="240" height={"135"} />
-              <p style={{ fontWeight: "700" }}>
-                Learn Python: The Complete Python Programming Course
-              </p>
-              <p> Avinash Jain, The Codex</p>
-              <p>4.3 star</p>
-              <p style={{ fontWeight: "700" }}>$30978</p>
-            </div>
-            <div className="course_card">
-              <img src={TrainerSVG} width="240" height={"135"} />
-              <p style={{ fontWeight: "700" }}>
-                Learn Python: The Complete Python Programming Course
-              </p>
-              <p> Avinash Jain, The Codex</p>
-              <p>4.3 star</p>
-              <p style={{ fontWeight: "700" }}>$30978</p>
-              <div className="best_seller">
-                <p>BestSeller</p>
+          <button onClick={previous}>prev</button>
+          <button onClick={next}>next</button>
+          <div className="carousal">
+              <div className="courses_swiper">
+                <div className="course_card">
+                  <img src={CourseSVG} width="240" height={"135"} />
+                  <p style={{ fontWeight: "700" }}>
+                    Learn Python: The Complete Python Programming Course
+                  </p>
+                  <p> Avinash Jain, The Codex</p>
+                  <p>4.3 star</p>
+                  <p style={{ fontWeight: "700" }}>$30978</p>
+                </div>
+                <div className="course_card">
+                  <img src={TrainerSVG} width="240" height={"135"} />
+                  <p style={{ fontWeight: "700" }}>
+                    Learn Python: The Complete Python Programming Course
+                  </p>
+                  <p> Avinash Jain, The Codex</p>
+                  <p>4.3 star</p>
+                  <p style={{ fontWeight: "700" }}>$30978</p>
+                  <div className="best_seller">
+                    <p>BestSeller</p>
+                  </div>
+                </div>
+                <div className="course_card">
+                  <img src={CourseSVG} width="240" height={"135"} />
+                  <p style={{ fontWeight: "700" }}>
+                    Learn Python: The Complete Python Programming Course
+                  </p>
+                  <p> Avinash Jain, The Codex</p>
+                  <p>4.3 star</p>
+                  <p style={{ fontWeight: "700" }}>$30978</p>
+                </div>
+                <div className="course_card">
+                  <img src={TrainerSVG} width="240" height={"135"} />
+                  <p style={{ fontWeight: "700" }}>
+                    Learn Python: The Complete Python Programming Course
+                  </p>
+                  <p> Avinash Jain, The Codex</p>
+                  <p>4.3 star</p>
+                  <p style={{ fontWeight: "700" }}>$30978</p>
+                </div>
+                <div className="course_card">
+                  <img src={CourseSVG} width="240" height={"135"} />
+                  <p style={{ fontWeight: "700" }}>
+                    Learn Python: The Complete Python Programming Course
+                  </p>
+                  <p> Avinash Jain, The Codex</p>
+                  <p>4.3 star</p>
+                  <p style={{ fontWeight: "700" }}>$30978</p>
+                </div>
+                <div className="course_card">
+                  <img src={TrainerSVG} width="240" height={"135"} />
+                  <p style={{ fontWeight: "700" }}>
+                    Learn Python: The Complete Python Programming Course
+                  </p>
+                  <p> Avinash Jain, The Codex</p>
+                  <p>4.3 star</p>
+                  <p style={{ fontWeight: "700" }}>$30978</p>
+                  <div className="best_seller">
+                    <p>BestSeller</p>
+                  </div>
+                </div>
+                <div className="course_card">
+                  <img src={CourseSVG} width="240" height={"135"} />
+                  <p style={{ fontWeight: "700" }}>
+                    Learn Python: The Complete Python Programming Course
+                  </p>
+                  <p> Avinash Jain, The Codex</p>
+                  <p>4.3 star</p>
+                  <p style={{ fontWeight: "700" }}>$30978</p>
+                </div>
+                <div className="course_card">
+                  <img src={TrainerSVG} width="240" height={"135"} />
+                  <p style={{ fontWeight: "700" }}>
+                    Learn Python: The Complete Python Programming Course
+                  </p>
+                  <p> Avinash Jain, The Codex</p>
+                  <p>4.3 star</p>
+                  <p style={{ fontWeight: "700" }}>$30978</p>
+                </div>
+                <div className="course_card">
+                  <img src={CourseSVG} width="240" height={"135"} />
+                  <p style={{ fontWeight: "700" }}>
+                    Learn Python: The Complete Python Programming Course
+                  </p>
+                  <p> Avinash Jain, The Codex</p>
+                  <p>4.3 star</p>
+                  <p style={{ fontWeight: "700" }}>$30978</p>
+                </div>
+                <div className="course_card">
+                  <img src={TrainerSVG} width="240" height={"135"} />
+                  <p style={{ fontWeight: "700" }}>
+                    Learn Python: The Complete Python Programming Course
+                  </p>
+                  <p> Avinash Jain, The Codex</p>
+                  <p>4.3 star</p>
+                  <p style={{ fontWeight: "700" }}>$30978</p>
+                  <div className="best_seller">
+                    <p>BestSeller</p>
+                  </div>
+                </div>
+                <div className="course_card">
+                  <img src={CourseSVG} width="240" height={"135"} />
+                  <p style={{ fontWeight: "700" }}>
+                    Learn Python: The Complete Python Programming Course
+                  </p>
+                  <p> Avinash Jain, The Codex</p>
+                  <p>4.3 star</p>
+                  <p style={{ fontWeight: "700" }}>$30978</p>
+                </div>
+                <div className="course_card">
+                  <img src={TrainerSVG} width="240" height={"135"} />
+                  <p style={{ fontWeight: "700" }}>
+                    Learn Python: The Complete Python Programming Course
+                  </p>
+                  <p> Avinash Jain, The Codex</p>
+                  <p>4.3 star</p>
+                  <p style={{ fontWeight: "700" }}>$30978</p>
+                </div>
               </div>
-            </div>
-            <div className="course_card">
-              <img src={CourseSVG} width="240" height={"135"} />
-              <p style={{ fontWeight: "700" }}>
-                Learn Python: The Complete Python Programming Course
-              </p>
-              <p> Avinash Jain, The Codex</p>
-              <p>4.3 star</p>
-              <p style={{ fontWeight: "700" }}>$30978</p>
-            </div>
-            <div className="course_card">
-              <img src={TrainerSVG} width="240" height={"135"} />
-              <p style={{ fontWeight: "700" }}>
-                Learn Python: The Complete Python Programming Course
-              </p>
-              <p> Avinash Jain, The Codex</p>
-              <p>4.3 star</p>
-              <p style={{ fontWeight: "700" }}>$30978</p>
-            </div>
           </div>
         </div>
         <div className="students_container">
@@ -564,3 +677,5 @@ export default function Udemy() {
     </div>
   );
 }
+
+
