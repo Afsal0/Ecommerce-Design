@@ -177,12 +177,12 @@
   background-color: grey;
 }
 
+/* Swiper starts */
 .carousal {
   width: 1000px;
   margin: 0 auto;
   overflow: hidden;
 }
-
 
 .courses_swiper {
   margin-top: 28px;
@@ -191,6 +191,7 @@
   gap: 10px;
   transition: 1s
 }
+/* Swiper ends */
 
 .best_seller {
   background-color: yellow;
